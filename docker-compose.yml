@@ -1,0 +1,11 @@
+version: "2.1"
+services:
+  container-1:
+    image: bann/container-1:local
+    build:
+      context: container-1
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3000
+    ports:
+      - "3000:3000"
