@@ -12,7 +12,7 @@
 # ---------------------------------------------------------------------------------------------------------------------
 
 variable "region" {
-  description = "The region where to deploy this code (e.g. us-east-1)."
+  description = "The region where to deploy this code."
   default     = "us-east-1"
 }
 
@@ -22,16 +22,16 @@ variable "key_pair_name" {
 }
 
 variable "container_1_image" {
-  description = "The name of the Docker image to deploy for the Sinatra backend (e.g. gruntwork/container-1-backend)"
+  description = "The name of the Docker image to deploy for the container"
   default     = "bann/container-1"
 }
 
 variable "container_1_version" {
-  description = "The version (i.e. tag) of the Docker container to deploy for the Sinatra backend (e.g. latest, 12345)"
+  description = "The version (i.e. tag) of the Docker container to deploy for the container"
   default     = "local"
 }
 
 variable "container_1_port" {
-  description = "The port the Sinatra backend Docker container listens on for HTTP requests (e.g. 4567)"
+  description = "The port the container Docker container listens on for HTTP requests"
   default     = 3000
 }
