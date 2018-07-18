@@ -78,3 +78,12 @@ To test that your service is working, use the URL output above:
 curl http://container-1-elb-11111.us-east-1.elb.amazonaws.com/health # ok
 curl http://container-1-elb-11111.us-east-1.elb.amazonaws.com/endpoint-1 # endpoint-1
 ```
+
+## Teardown Infrastructure in AWS
+
+Once you're done with this demo (especially if you're using a free AWS account), you'll want to remove all the infrastructure from AWS. Use `terraform destroy` from the `terraform-config` directory, and type `yes` when prompted.
+
+```sh
+cd terraform-config
+terraform destroy
+```
